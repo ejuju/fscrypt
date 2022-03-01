@@ -30,7 +30,7 @@ func TestAES(t *testing.T) {
 }
 
 func TestEncryptDirAES(t *testing.T) {
-	err := EncryptDirAES("./_target_test", []byte("01234567890123456789012345678901"))
+	err := EncryptDirAES("./target_test", []byte("01234567890123456789012345678901"))
 	if err != nil {
 		t.Error(err)
 		return
@@ -38,7 +38,7 @@ func TestEncryptDirAES(t *testing.T) {
 }
 
 func TestDecryptDirAES(t *testing.T) {
-	err := DecryptDirAES("./_target_test", []byte("01234567890123456789012345678901"))
+	err := DecryptDirAES("./target_test", []byte("01234567890123456789012345678901"))
 	if err != nil {
 		t.Error(err)
 		return
